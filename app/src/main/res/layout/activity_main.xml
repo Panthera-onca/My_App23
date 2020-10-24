@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_mot_a_modifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mot à modifier"/>
+
+    <EditText
+        android:id="@+id/et_mot_a_transformer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mot_a_modifier"/>
+
+    <Button
+        android:id="@+id/btn_transformer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transformer"
+        android:layout_below="@id/et_mot_a_transformer"
+        android:onClick="onClickTransformer"/>
+
+    <TextView
+        android:id="@+id/tv_mot_transforme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_transformer"
+        android:text="Mot transformé"/>
+
+    <EditText
+        android:id="@+id/et_mot_transforme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_transformer"/>
+</RelativeLayout>
